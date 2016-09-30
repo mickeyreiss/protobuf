@@ -338,6 +338,8 @@ build_php5.5_c() {
   ln -sfn /usr/bin/php5.5 /usr/bin/php
   ln -sfn /usr/bin/php-config5.5 /usr/bin/php-config
   ln -sfn /usr/bin/phpize5.5 /usr/bin/phpize
+  which php
+  php --version
   cd php/tests && /bin/bash ./test.sh && cd ../..
 }
 
